@@ -1,0 +1,11 @@
+.oa
+.classpath
+.project
+.settings
+bin/
+*~
+*.class
+target/
+*.MF
+build/
+.factorypath

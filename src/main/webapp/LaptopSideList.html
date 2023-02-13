@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Cellar</title>
+<link rel="stylesheet" href="css/styles_LaptopList.css" />
+
+</head>
+<body>
+
+	<div class="search">
+		<input type="text" id='searchKey' placeholder="Search..">
+		<button type="button" id='btnSearch'>Search</button>
+		<button type="button" id="btnReset">Reset</button>
+		<button type="button" id='btnAdd'>New Laptop</button>
+	</div>
+	<br>
+	<div class="leftArea">
+		<ul id="laptopList"></ul>
+	</div>
+
+	<div class="mainArea">
+
+		<label>Id:</label> <input id="id" name="id" type="text" disabled /> <label>Name:</label>
+		<input type="text" id="lapName" name="lapName" required /> <label>Brand:</label>
+		<input type="text" id="brand" name="brand" /> <label>Display:</label>
+		<input type="text" id="display" name="display" /> <label>Processor:</label>
+		<input type="text" id="processor" name="processor" /> <label>Memory:</label>
+		<input type="text" id="lapMem" name="lapMem" /> <label>Hard
+			Drive:</label> <input type="text" id="harddrive" name="harddrive" /> <label>Graphics:</label>
+		<input type="text" id="graphics" name="graphics" /> <label>Number
+			USBs:</label> <input type="text" id="numUsb" name="numUsb" />
+		<button type="button" id='btnSave'>Save</button>
+		<button type="button" id='btnDelete'>Delete</button>
+	</div>
+
+	<div class="rightArea">
+
+		<img id="pic" width="260" /> <label>Price:</label>
+		<textarea id="price" name="price"></textarea>
+	</div>
+
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/lapList.js"></script>
+</body>
+</html>

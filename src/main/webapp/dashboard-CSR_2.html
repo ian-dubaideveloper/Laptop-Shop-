@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Theme Made By www.w3schools.com - No Copyright -->
+<link rel="shortcut icon" type="image/x-icon"
+	href="resources/images/pied_piper.ico" />
+<title>Dashboard - Customer Service</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/dataTables.bootstrap4.css" />
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+<link href="assets/themes/slate.css" rel="stylesheet">
+
+<style>
+body {
+	font: 20px Montserrat, sans-serif;
+	line-height: 1.8;
+	color: #f5f6f7;
+}
+
+p {
+	font-size: 16px;
+}
+
+.margin {
+	margin-bottom: 45px;
+}
+
+.bg-1 {
+	background-color: #1abc9c; /* Green */
+	color: #ffffff;
+}
+
+.bg-2 {
+	background-color: #474e5d; /* Dark Blue */
+	color: #ffffff;
+}
+
+.bg-3 {
+	background-color: #ffffff; /* White */
+	color: #555555;
+}
+
+.bg-4 {
+	background-color: #2f2f2f; /* Black Gray */
+	color: #fff;
+}
+
+.container-fluid {
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+
+.navbar {
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border: 0;
+	border-radius: 0;
+	margin-bottom: 0;
+	font-size: 12px;
+	letter-spacing: 5px;
+}
+
+.navbar-nav  li a:hover {
+	color: #1abc9c !important;
+}
+</style>
+</head>
+<body>
+
+	<!-- Navbar -->
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target="#myNavbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Me</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html" class="btn btn-success"> <span
+							class="glyphicon glyphicon-log-out"></span> Log out
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- First Container -->
+	<div class="container-fluid bg-1 text-center">
+		<h3 class="margin">Customer Service DashBoard</h3>
+		<img src="images/banner/customer_service_rep.png"
+			class="img-responsive img-circle margin" style="display: inline"
+			alt="Bird" width="350" height="350">
+		<h3>I Make Phone Calls</h3>
+	</div>
+	<!-- Start Section -->
+	<div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+		<div id="tabs" class="jumbotron">
+			<div class="row">
+				<div class="col-md-10">
+					<!-- Nav tabs -->
+					<ul class="nav nav-pills">
+						<li role="presentation" class="active"><a href="#tab1"
+							data-toggle="tab"><span class="glyphicon glyphicon-home">
+									Home</a></li>
+						<li role="presentation"><a href="#tab2" data-toggle="tab"><span
+								class="glyphicon glyphicon-list-alt"> Inventory</a></li>
+						<li role="presentation"><a href="#tab3" data-toggle="tab"><span
+								class="glyphicon glyphicon-map-marker"></span> Location</a></li>
+						<li role="presentation"><a href="#tab4" data-toggle="tab"><span
+								class="glyphicon glyphicon-alert"></span> Alerts</a></li>
+					</ul>
+					<p></p>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<!-- Start of Home Tab -->
+						<div role="tabpanel" class="tab-pane active" id="tab1">
+							<div class="embed-responsive embed-responsive-16by9">
+								<h2>Customer Support Rep</h2>
+								<p>Energetic, results-driven professional with more than a
+									decade of experience in customer service arena. Track record of
+									conferring with customers by telephone or in person to provide
+									information about products or services. Expert in taking or
+									entering orders, creating/canceling accounts and obtaining
+									details of complaints. In-depth knowledge of principles and
+									processes of customer needs assessment, meeting quality
+									standards for services, and evaluation of customer
+									satisfaction. Bilingual: English/Spanish.</p>
+								<img src="images/banner/Hotlines.jpg" class="img-rounded"
+									alt="Laptop Banner" width="700" height="150">
+							</div>
+						</div>
+						<!-- End Home Tab -->
+						<!-- Start of Inventory Tab -->
+						<div role="tabpanel" class="tab-pane" id="tab2">
+							<div class="table-responsive">
+							<h3>http://localhost:8090/PiedPiperProject/rest/Data</h3>
+								<table id="laptopTable"
+									class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th>Id</th>
+											<th>Name</th>
+											<th>Brand</th>
+											<th>Processor</th>
+											<th>Memory</th>
+											<th>Harddrive</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<th>Id</th>
+											<th>Name</th>
+											<th>Brand</th>
+											<th>Processor</th>
+											<th>Memory</th>
+											<th>Harddrive</th>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+						<!-- End Inventory Tab -->
+
+						<!-- Start of Location Tab -->
+						<div role="tabpanel" class="tab-pane" id="tab3">
+							<div class="table-responsive">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.4857320605272!2d-7.905403268421815!3d53.418355355033455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x1f3a077e5c4fdffd!2sAthlone+Institute+of+Technology!5e0!3m2!1sen!2sie!4v1465125098631"
+									width="600" height="450" style="border: 0"
+									class="embed-responsive-item"></iframe>
+							</div>
+						</div>
+						<!-- End Location Tab -->
+						<!-- Start Alert Panels -->
+						<div role="tabpanel" class="tab-pane" id="tab4">
+							<div class="table-responsive">
+								<div class="row">
+									<div class="col-lg-3 col-md-6">
+										<div class="panel panel-primary">
+											<div class="panel-heading">
+												<div class="row">
+													<div class="col-xs-3">
+														<i class="fa fa-comments fa-5x"></i>
+													</div>
+													<div class="col-xs-9 text-right">
+														<div class="huge">26</div>
+														<div>New Comments!</div>
+													</div>
+												</div>
+											</div>
+											<a href="#">
+												<div class="panel-footer">
+													<span class="pull-left">View Details</span> <span
+														class="pull-right"><i
+														class="fa fa-arrow-circle-right"></i></span>
+													<div class="clearfix"></div>
+												</div>
+											</a>
+										</div>
+									</div>
+									<div class="col-lg-3 col-md-6">
+										<div class="panel panel-green">
+											<div class="panel-heading">
+												<div class="row">
+													<div class="col-xs-3">
+														<i class="fa fa-tasks fa-5x"></i>
+													</div>
+													<div class="col-xs-9 text-right">
+														<div class="huge">12</div>
+														<div>New Tasks!</div>
+													</div>
+												</div>
+											</div>
+											<a href="#">
+												<div class="panel-footer">
+													<span class="pull-left">View Details</span> <span
+														class="pull-right"><i
+														class="fa fa-arrow-circle-right"></i></span>
+													<div class="clearfix"></div>
+												</div>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Alert Panels -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Section -->
+
+	<!-- Second Container -->
+	<div class="container-fluid bg-2 text-center">
+		<h3 class="margin">What Am I?</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+			eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+			ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+			aliquip ex ea commodo consequat.</p>
+		<a href="#" class="btn btn-default btn-lg"> <span
+			class="glyphicon glyphicon-search"></span> Search
+		</a>
+	</div>
+
+	<!-- Third Container (Grid) -->
+	<div class="container-fluid bg-3 text-center">
+		<h3 class="margin">Where To Find Me?</h3>
+		<br>
+		<div class="row">
+			<div class="col-sm-4">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="col-sm-4">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+			<div class="col-sm-4">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+					do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div>
+		</div>
+	</div>
+	<div class="query-table">
+		<input id="imsiInput" name="imsiInput" type="text" /><label>IMSI
+			to search</label>
+		<button id="imsiBtn">Query</button>
+		<table id="myTable"></table>
+	</div>
+
+	<!-- Footer -->
+	<footer class="container-fluid bg-4 text-center">
+		<p>
+			Bootstrap Theme Made By <a href="http://www.w3schools.com">www.w3schools.com</a>
+		</p>
+	</footer>
+
+
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.js"></script>
+	<script src="js/Data_Table_Laptop.js"></script>
+
+
+</body>
+</html>

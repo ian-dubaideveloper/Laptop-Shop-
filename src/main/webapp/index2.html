@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="shortcut icon" type="image/x-icon"
+	href="images/Laptop_00.png" />
+<title>LaptopShop Table</title>
+<!-- <link rel="stylesheet" href="css/jquery.dataTables.css" /> -->
+<!-- <link rel="stylesheet" href="css/dataTables.bootstrap.css" /> -->
+<link rel="stylesheet" href="css/dataTables.bootstrap4.css" />
+<link href="assets/css/bootstrap.css" rel="stylesheet">
+<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+<!-- Start Bootswatch Themes (Uncomment the one you want to use. More info at http://www.bootswatch.com) -->
+<!-- <link href="assets/themes/cerulean.css" rel="stylesheet"> -->
+<!-- <link href="assets/themes/cosmo.css" rel="stylesheet"> -->
+<!-- <link href="assets/themes/cyborg.css" rel="stylesheet"> -->
+<!-- <link href="assets/themes/darkly.css" rel="stylesheet"> -->
+<!-- <link href="assets/themes/flatly.css" rel="stylesheet"> -->
+<!-- <link href="assets/themes/journal.css" rel="stylesheet"> -->
+<!-- <link href="assets/themes/lumen.css" rel="stylesheet"> -->
+<link href="assets/themes/paper.css" rel="stylesheet">
+<!--<link href="assets/themes/readable.css" rel="stylesheet">-->
+<!-- <link href="assets/themes/sandstone.css" rel="stylesheet"> -->
+<!-- <link href="assets/themes/simplex.css" rel="stylesheet"> -->
+<!-- <link href="assets/themes/slate.css" rel="stylesheet"> -->
+<!--<link href="assets/themes/spacelab.css" rel="stylesheet">-->
+<!-- <link href="assets/themes/superhero.css" rel="stylesheet"> -->
+<!-- <link href="assets/themes/united.css" rel="stylesheet"> -->
+<!-- <link href="assets/themes/yeti.css" rel="stylesheet"> -->
+<style type="text/css">
+.jumbotron, .page {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	/* 	margin-bottom: 0px; */
+}
+</style>
+</head>
+<body style="padding-top: 50px;">
+	<!-- Start Navigation Bar -->
+	<nav id="topnavigation" class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#topnav" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Laptops</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="topnav" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" role="button"><i class="fa fa-list-alt"></i>
+							Menu <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#tab1">Home</a></li>
+							<li><a href="#tab2">Inventory</a></li>
+							<li><a href="#tab3">Brands</a></li>
+							<li><a href="#tab4">Location</a></li>
+							<li><a href="#tab5">Buying Advice</a></li>
+							<li><a href="#tab6">Top 5</a></li>
+							<li><a href="#tab7">Images</a></li>
+						</ul></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<p class="navbar-text">
+						<img src="images/avatar02.jpg" width="18" class="img-circle">
+						Welcome back, Richie!
+					</p>
+					<li><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<!-- End Navigation Bar -->
+	<!-- Start Header -->
+	<!-- 	<div class="header_grad" id="header_grad"> -->
+	<!-- 	<h1>Header</h1> -->
+	<!-- 	</div> -->
+	<!-- End Header Section -->
+	<!-- Start Section -->
+	<div class="container" style="padding-top: 20px; padding-bottom: 20px;">
+		<div id="tabs" class="jumbotron">
+			<div class="row">
+				<div class="col-md-10">
+					<!-- Nav tabs -->
+					<ul class="nav nav-pills">
+						<li role="presentation" class="active"><a href="#tab1"
+							data-toggle="tab"><span class="glyphicon glyphicon-home">
+									Home</a></li>
+						<li role="presentation"><a href="#tab2" data-toggle="tab"><span
+								class="glyphicon glyphicon-list-alt"> Inventory</a></li>
+						<li role="presentation"><a href="#tab3" data-toggle="tab"><span
+								class="glyphicon glyphicon-apple"></span> Brands</a></li>
+						<li role="presentation"><a href="#tab4" data-toggle="tab"><span
+								class="glyphicon glyphicon-map-marker"></span> Location</a></li>
+						<li role="presentation"><a href="#tab5" data-toggle="tab"><span
+								class="glyphicon glyphicon-credit-card"></span> Buying Advice</a></li>
+						<li role="presentation"><a href="#tab6" data-toggle="tab"><span
+								class="glyphicon glyphicon-thumbs-up"></span> Top 5</a></li>
+						<li role="presentation"><a href="#tab7" data-toggle="tab"><span
+								class="glyphicon glyphicon-th"></span> Images</a></li>
+					</ul>
+					<p></p>
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<!-- Start of Home Tab -->
+						<div role="tabpanel" class="tab-pane active" id="tab1">
+							<div class="embed-responsive embed-responsive-16by9">
+								<h2>Laptop Shop Athlone</h2>
+								<p>The Laptop Shop was set up in 2016 by a team of highly
+									experienced individuals from the world of IT. The Laptop Shop
+									operates an extensive support function for people who have
+									chosen to purchase their IT items in-store. We also stock a
+									wide range of laptops from brands such as Apple, Dell, Lenovo,
+									Asus, HP, Toshiba and Acer. The Laptop Shop prides itself on
+									our friendly approach and service orientation.</p>
+								<img src="images/banner/Laptops.png" class="img-rounded"
+									alt="Laptop Banner" width="700" height="150">
+							</div>
+						</div>
+						<!-- End Home Tab -->
+						<!-- Start of Inventory Tab -->
+						<div role="tabpanel" class="tab-pane" id="tab2">
+							<div class="table-responsive">
+								<table id="laptopTable"
+									class="table table-bordered table-striped">
+									<thead>
+										<tr>
+											<th>Id</th>
+											<th>Name</th>
+											<th>Brand</th>
+											<th>Processor</th>
+											<th>Memory</th>
+											<th>Harddrive</th>
+										</tr>
+									</thead>
+									<tfoot>
+										<tr>
+											<th>Id</th>
+											<th>Name</th>
+											<th>Brand</th>
+											<th>Processor</th>
+											<th>Memory</th>
+											<th>Harddrive</th>
+										</tr>
+									</tfoot>
+								</table>
+							</div>
+						</div>
+						<!-- End Inventory Tab -->
+						<!-- Start of Brand Tab -->
+						<div role="tabpanel" class="tab-pane" id="tab3">
+							<div class="embed-responsive embed-responsive-16by9">
+								<div id="thumbnails" class="jumbotron">
+									<div class="container-fluid">
+										<div class="row">
+											<!-- Start of Apple Brand -->
+											<div class="col-lg-3 col-sm-4 col-6">
+												<a href="#" title="Apple"><img
+													src="images/brands/01-Apple.png"
+													class="thumbnail img-responsive" height="150" width="150"></a>
+											</div>
+											<!-- End of Apple Brand -->
+											<!-- Start of Dell Brand -->
+											<div class="col-lg-3 col-sm-4 col-6">
+												<a href="#" title="Dell"><img
+													src="images/brands/02-Dell.png"
+													class="thumbnail img-responsive" height="150" width="150"></a>
+											</div>
+											<!-- End of Dell Brand -->
+											<!-- Start of Lenovo Brand -->
+											<div class="col-lg-3 col-sm-4 col-6">
+												<a href="#" title="Lenovo"><img
+													src="images/brands/03-lenovo.png"
+													class="thumbnail img-responsive" height="150" width="150"></a>
+											</div>
+											<!-- End of Lenovo Brand -->
+										</div>
+										<div class="row">
+											<!-- Start of Asus Brand -->
+											<div class="col-lg-3 col-sm-4 col-6">
+												<a href="#" title="Asus"><img
+													src="images/brands/04-asus.png"
+													class="thumbnail img-responsive" height="150" width="150"></a>
+											</div>
+											<!-- End of Asus Brand -->
+											<!-- Start of HP Brand -->
+											<div class="col-lg-3 col-sm-4 col-6">
+												<a href="#" title="HP"><img
+													src="images/brands/05-hp.png"
+													class="thumbnail img-responsive" height="150" width="150"></a>
+											</div>
+											<!-- End of HP Brand -->
+											<!-- Start of Toshiba Brand -->
+											<div class="col-lg-3 col-sm-4 col-6">
+												<a href="#" title="Toshiba"><img
+													src="images/brands/06-toshiba.png"
+													class="thumbnail img-responsive" height="150" width="150"></a>
+											</div>
+											<!-- End of Toshiba Brand -->
+										</div>
+										<div class="row">
+											<!-- Start of Acer Brand -->
+											<div class="col-lg-3 col-sm-4 col-6">
+												<a href="#" title="Acer"><img
+													src="images/brands/07-acer.png"
+													class="thumbnail img-responsive" height="150" width="150"></a>
+											</div>
+											<!-- End of Acer Brand -->
+										</div>
+									</div>
+									<div id="myModal" class="modal fade" tabindex="-1"
+										role="dialog">
+										<div class="modal-dialog">
+											<div class="modal-content">
+												<div class="modal-header">
+													<button type="button" class="close" data-dismiss="modal">×</button>
+													<h3 class="modal-title">Heading</h3>
+												</div>
+												<div class="modal-body"></div>
+												<div class="modal-footer">
+													<button class="btn btn-default" data-dismiss="modal">Close</button>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Brand Tab -->
+						<!-- Start of Location Tab -->
+						<div role="tabpanel" class="tab-pane" id="tab4">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.4857320605272!2d-7.905403268421815!3d53.418355355033455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000000000%3A0x1f3a077e5c4fdffd!2sAthlone+Institute+of+Technology!5e0!3m2!1sen!2sie!4v1465125098631"
+									width="600" height="450" style="border: 0"
+									class="embed-responsive-item"></iframe>
+							</div>
+						</div>
+						<!-- End Location Tab -->
+						<!-- Start of Buying Advice Tab -->
+						<div role="tabpanel" class="tab-pane" id="tab5">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" width="853" height="480"
+									src="https://www.youtube.com/embed/78VsZsl7UpM"></iframe>
+							</div>
+						</div>
+						<!-- End Buying Advice Tab -->
+						<!-- Start of Top 5 Tab -->
+						<div role="tabpanel" class="tab-pane" id="tab6">
+							<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" width="853" height="480"
+									src="https://www.youtube.com/embed/x-yxRGpgGNY"></iframe>
+							</div>
+						</div>
+						<!-- End Top 5 Tab -->
+						<!-- Start of Carousel Tab -->
+						<div role="tabpanel" class="tab-pane" id="tab7">
+							<div class="embed-responsive embed-responsive-16by9">
+								<div class="container">
+									<div id="tabs" class="jumbotron">
+										<div id="carousel" class="carousel slide" data-ride="carousel">
+											<ol class="carousel-indicators">
+												<li data-target="#carousel-example-generic"
+													data-slide-to="0" class="active"></li>
+												<li data-target="#carousel-example-generic"
+													data-slide-to="1"></li>
+												<li data-target="#carousel-example-generic"
+													data-slide-to="2"></li>
+											</ol>
+											<div class="carousel-inner" role="listbox">
+												<div class="item active">
+													<img src="images/carousel01.jpg" alt="First slide">
+												</div>
+												<div class="item">
+													<img src="images/carousel02.jpg" alt="Second slide">
+												</div>
+												<div class="item">
+													<img src="images/carousel03.jpg" alt="Third slide">
+												</div>
+											</div>
+											<a class="left carousel-control"
+												href="#carousel-example-generic" role="button"
+												data-slide="prev"> <span
+												class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+												<span class="sr-only">Previous</span>
+											</a> <a class="right carousel-control"
+												href="#carousel-example-generic" role="button"
+												data-slide="next"> <span
+												class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+												<span class="sr-only">Next</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Carousel Tab -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Section -->
+	<!-- Start Bottom Nav -->
+	<div id="bottomnav" class="jumbotron"
+		style="padding-top: 20px; padding-bottom: 20px;">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					Copyright 2016 Ait Laptops.com | <a href="#">Terms</a> | <a
+						href="#">Privacy</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End Bottom Nav -->
+
+
+	<script src="js/jquery-1.12.4.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="js/jquery.dataTables.js"></script>
+	<script src="js/jquery.prettyPhoto.js"></script>
+	<script src="js/Data_Table_Laptop.js"></script>
+</body>
+</html>
